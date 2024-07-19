@@ -19,7 +19,12 @@
 }
 
 html,
-body,
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
 #root {
   margin: 0;
   height: 100%;

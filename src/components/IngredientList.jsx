@@ -6,8 +6,9 @@ const IngredientList = (props) => {
             {props.ingredients.map((ingredient, idx) => {
                 return (
                     <div key={idx}>
-                        <li key={idx} style={{color: `${ingredient.color}`}}>{ingredient.name}</li>
+                        <li key={idx} style={{backgroundColor: `${ingredient.color}`}}>{ingredient.name}
                         <button onClick={() => props.addToBurger(ingredient)} type='submit'>+</button>
+                        </li>
                     </div>
                 )
             })}
